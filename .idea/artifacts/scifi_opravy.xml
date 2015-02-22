@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="scifi-opravy">
+    <output-path>$PROJECT_DIR$/out/artifacts/scifi_opravy</output-path>
+    <root id="archive" name="scifi-opravy.zip">
+      <element id="directory" name="client-opravy">
+        <element id="artifact" artifact-name="client-opravy:jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/client-opravy.bat" />
+        <element id="file-copy" path="$PROJECT_DIR$/client-opravy.properties" />
+        <element id="file-copy" path="$PROJECT_DIR$/version-opravy.properties" />
+      </element>
+      <element id="directory" name="server-opravy">
+        <element id="artifact" artifact-name="server-opravy:jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/server-opravy.properties" />
+        <element id="file-copy" path="$PROJECT_DIR$/server-opravy.bat" />
+        <element id="file-copy" path="$PROJECT_DIR$/version-opravy.properties" />
+        <element id="file-copy" path="$PROJECT_DIR$/mapa.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/cross.png" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_31" class="java.beans.XMLDecoder"> 
+ <object class="com.jformdesigner.model.FormModel"> 
+  <void property="contentType"> 
+   <string>form/swing</string> 
+  </void> 
+  <void property="root"> 
+   <object class="com.jformdesigner.model.FormRoot"> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormWindow"> 
+      <string>javax.swing.JFrame</string> 
+      <object class="com.jformdesigner.model.FormLayoutManager"> 
+       <class>java.awt.BorderLayout</class> 
+      </object> 
+      <void method="setProperty"> 
+       <string>$sizePolicy</string> 
+       <int>1</int> 
+      </void> 
+      <void method="setProperty"> 
+       <string>$locationPolicy</string> 
+       <int>1</int> 
+      </void> 
+      <void method="setProperty"> 
+       <string>title</string> 
+       <string>Server - Opravy</string> 
+      </void> 
+      <void method="setProperty"> 
+       <string>defaultCloseOperation</string> 
+       <int>0</int> 
+      </void> 
+      <void method="addEvent"> 
+       <object class="com.jformdesigner.model.FormEvent"> 
+        <string>java.awt.event.WindowListener</string> 
+        <string>windowClosing</string> 
+        <string>thisWindowClosing</string> 
+        <boolean>true</boolean> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormContainer"> 
+        <string>javax.swing.JPanel</string> 
+        <object class="com.jformdesigner.model.FormLayoutManager"> 
+         <class>java.awt.GridLayout</class> 
+         <void method="setProperty"> 
+          <string>columns</string> 
+          <int>2</int> 
+         </void> 
+        </object> 
+        <void property="name"> 
+         <string>mainPanel</string> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormContainer"> 
+          <string>javax.swing.JPanel</string> 
+          <object class="com.jformdesigner.model.FormLayoutManager"> 
+           <class>java.awt.BorderLayout</class> 
+          </object> 
+          <void method="setProperty"> 
+           <string>border</string> 
+           <object class="javax.swing.border.TitledBorder"> 
+            <string>Opravy</string> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>minimumSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>84</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>preferredSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>700</int> 
+            <int>477</int> 
+           </object> 
+          </void> 
+          <void property="name"> 
+           <string>opravyPanel</string> 
+          </void> 
+          <void method="add"> 
+           <object class="com.jformdesigner.model.FormContainer"> 
+            <string>javax.swing.JToolBar</string> 
+            <object class="com.jformdesigner.model.FormLayoutManager"> 
+             <class>javax.swing.JToolBar</class> 
+            </object> 
+            <void method="setProperty"> 
+             <string>floatable</string> 
+             <boolean>false</boolean> 
+            </void> 
+            <void property="name"> 
+             <string>opravyToolbar</string> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormComponent"> 
+              <string>javax.swing.JButton</string> 
+              <void method="setProperty"> 
+               <string>text</string> 
+               <string>Pridat</string> 
+              </void> 
+              <void property="name"> 
+               <string>pridatOpravaButton</string> 
+              </void> 
+              <void method="addEvent"> 
+               <object class="com.jformdesigner.model.FormEvent"> 
+                <string>java.awt.event.ActionListener</string> 
+                <string>actionPerformed</string> 
+                <string>pridatOpravaButtonActionPerformed</string> 
+                <boolean>true</boolean> 
+               </object> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormComponent"> 
+              <string>javax.swing.JButton</string> 
+              <void method="setProperty"> 
+               <string>text</string> 
+               <string>Smazat</string> 
+              </void> 
+              <void property="name"> 
+               <string>smazatOpravaButton</string> 
+              </void> 
+              <void method="addEvent"> 
+               <object class="com.jformdesigner.model.FormEvent"> 
+                <string>java.awt.event.ActionListener</string> 
+                <string>actionPerformed</string> 
+                <string>smazatOpravaButtonActionPerformed</string> 
+                <boolean>true</boolean> 
+               </object> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormComponent"> 
+              <string>javax.swing.JButton</string> 
+              <void method="setProperty"> 
+               <string>text</string> 
+               <string>Změnit popis</string> 
+              </void> 
+              <void property="name"> 
+               <string>zmenitPopisButton</string> 
+              </void> 
+              <void method="addEvent"> 
+               <object class="com.jformdesigner.model.FormEvent"> 
+                <string>java.awt.event.ActionListener</string> 
+                <string>actionPerformed</string> 
+                <string>zmenitPopisButtonActionPerformed</string> 
+                <boolean>true</boolean> 
+               </object> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormComponent"> 
+              <string>javax.swing.JButton</string> 
+              <void method="setProperty"> 
+               <string>text</string> 
+               <string>Označit na mapě</string> 
+              </void> 
+              <void property="name"> 
+               <string>oznacitButton</string> 
+              </void> 
+              <void method="addEvent"> 
+               <object class="com.jformdesigner.model.FormEvent"> 
+                <string>java.awt.event.ActionListener</string> 
+                <string>actionPerformed</string> 
+                <string>oznacitButtonActionPerformed</string> 
+                <boolean>true</boolean> 
+               </object> 
+              </void> 
+             </object> 
+            </void> 
+           </object> 
+           <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+            <class>java.lang.String</class> 
+            <void method="setProperty"> 
+             <string>value</string> 
+             <string>First</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="com.jformdesigner.model.FormContainer"> 
+            <string>javax.swing.JScrollPane</string> 
+            <object class="com.jformdesigner.model.FormLayoutManager"> 
+             <class>javax.swing.JScrollPane</class> 
+            </object> 
+            <void method="setProperty"> 
+             <string>preferredSize</string> 
+             <object class="java.awt.Dimension"> 
+              <int>700</int> 
+              <int>419</int> 
+             </object> 
+            </void> 
+            <void property="name"> 
+             <string>scrollPane1</string> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormComponent"> 
+              <string>javax.swing.JTable</string> 
+              <void method="setProperty"> 
+               <string>selectionMode</string> 
+               <int>0</int> 
+              </void> 
+              <void method="setProperty"> 
+               <string>minimumSize</string> 
+               <object class="java.awt.Dimension"> 
+                <int>135</int> 
+                <int>10</int> 
+               </object> 
+              </void> 
+              <void property="name"> 
+               <string>opravyTable</string> 
+              </void> 
+             </object> 
+            </void> 
+           </object> 
+           <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+            <class>java.lang.String</class> 
+            <void method="setProperty"> 
+             <string>value</string> 
+             <string>Center</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormContainer"> 
+          <string>javax.swing.JScrollPane</string> 
+          <object class="com.jformdesigner.model.FormLayoutManager"> 
+           <class>javax.swing.JScrollPane</class> 
+          </object> 
+          <void method="setProperty"> 
+           <string>border</string> 
+           <object class="javax.swing.border.TitledBorder"> 
+            <string>Mapa</string> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>minimumSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>400</int> 
+            <int>36</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>preferredSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>400</int> 
+            <int>36</int> 
+           </object> 
+          </void> 
+          <void property="name"> 
+           <string>panel3</string> 
+          </void> 
+          <void method="add"> 
+           <object class="com.jformdesigner.model.FormContainer"> 
+            <string>main.MapaPanel</string> 
+            <object class="com.jformdesigner.model.FormLayoutManager"> 
+             <class>java.awt.BorderLayout</class> 
+            </object> 
+            <void method="setProperty"> 
+             <string>background</string> 
+             <object class="java.awt.Color"> 
+              <int>255</int> 
+              <int>255</int> 
+              <int>255</int> 
+              <int>255</int> 
+             </object> 
+            </void> 
+            <void property="name"> 
+             <string>mapaPanel</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>java.lang.String</class> 
+        <void method="setProperty"> 
+         <string>value</string> 
+         <string>Center</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormContainer"> 
+        <string>javax.swing.JToolBar</string> 
+        <object class="com.jformdesigner.model.FormLayoutManager"> 
+         <class>javax.swing.JToolBar</class> 
+        </object> 
+        <void method="setProperty"> 
+         <string>floatable</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void property="name"> 
+         <string>mainToolbar</string> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormComponent"> 
+          <string>javax.swing.JButton</string> 
+          <void method="setProperty"> 
+           <string>text</string> 
+           <string>Spustit server</string> 
+          </void> 
+          <void property="name"> 
+           <string>startServerButton</string> 
+          </void> 
+          <void method="addEvent"> 
+           <object class="com.jformdesigner.model.FormEvent"> 
+            <string>java.awt.event.ActionListener</string> 
+            <string>actionPerformed</string> 
+            <string>startServerButtonActionPerformed</string> 
+            <boolean>true</boolean> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormComponent"> 
+          <string>javax.swing.JButton</string> 
+          <void method="setProperty"> 
+           <string>text</string> 
+           <string>Zastavit server</string> 
+          </void> 
+          <void method="setProperty"> 
+           <string>enabled</string> 
+           <boolean>false</boolean> 
+          </void> 
+          <void property="name"> 
+           <string>stopServerButton</string> 
+          </void> 
+          <void method="addEvent"> 
+           <object class="com.jformdesigner.model.FormEvent"> 
+            <string>java.awt.event.ActionListener</string> 
+            <string>actionPerformed</string> 
+            <string>stopServerButtonActionPerformed</string> 
+            <boolean>true</boolean> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormComponent"> 
+          <string>javax.swing.JButton</string> 
+          <void method="setProperty"> 
+           <string>text</string> 
+           <string>Ulozit nastaveni</string> 
+          </void> 
+          <void property="name"> 
+           <string>zdrojeUlozit</string> 
+          </void> 
+          <void method="addEvent"> 
+           <object class="com.jformdesigner.model.FormEvent"> 
+            <string>java.awt.event.ActionListener</string> 
+            <string>actionPerformed</string> 
+            <string>ulozitActionPerformed</string> 
+            <boolean>true</boolean> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormComponent"> 
+          <string>javax.swing.JButton</string> 
+          <void method="setProperty"> 
+           <string>text</string> 
+           <string>Nahrat nastaveni</string> 
+          </void> 
+          <void property="name"> 
+           <string>zdrojeNahrat</string> 
+          </void> 
+          <void method="addEvent"> 
+           <object class="com.jformdesigner.model.FormEvent"> 
+            <string>java.awt.event.ActionListener</string> 
+            <string>actionPerformed</string> 
+            <string>nahratActionPerformed</string> 
+            <boolean>true</boolean> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormComponent"> 
+          <string>javax.swing.JButton</string> 
+          <void method="setProperty"> 
+           <string>text</string> 
+           <string>text</string> 
+          </void> 
+          <void property="name"> 
+           <string>chatEnableButton</string> 
+          </void> 
+          <void method="addEvent"> 
+           <object class="com.jformdesigner.model.FormEvent"> 
+            <string>java.awt.event.ActionListener</string> 
+            <string>actionPerformed</string> 
+            <string>chatEnableButtonActionPerformed</string> 
+            <boolean>true</boolean> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>java.lang.String</class> 
+        <void method="setProperty"> 
+         <string>value</string> 
+         <string>First</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormContainer"> 
+        <string>javax.swing.JPanel</string> 
+        <object class="com.jformdesigner.model.FormLayoutManager"> 
+         <class>java.awt.BorderLayout</class> 
+        </object> 
+        <void property="name"> 
+         <string>panel1</string> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormContainer"> 
+          <string>javax.swing.JPanel</string> 
+          <object class="com.jformdesigner.model.FormLayoutManager"> 
+           <class>java.awt.BorderLayout</class> 
+          </object> 
+          <void method="setProperty"> 
+           <string>border</string> 
+           <object class="javax.swing.border.TitledBorder"> 
+            <string>Chat</string> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>minimumSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>50</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>preferredSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>50</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>maximumSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>50</int> 
+           </object> 
+          </void> 
+          <void property="name"> 
+           <string>chatPanel</string> 
+          </void> 
+          <void method="add"> 
+           <object class="com.jformdesigner.model.FormContainer"> 
+            <string>javax.swing.JPanel</string> 
+            <object class="com.jformdesigner.model.FormLayoutManager"> 
+             <class>java.awt.BorderLayout</class> 
+            </object> 
+            <void property="name"> 
+             <string>panel2</string> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormContainer"> 
+              <string>javax.swing.JScrollPane</string> 
+              <object class="com.jformdesigner.model.FormLayoutManager"> 
+               <class>javax.swing.JScrollPane</class> 
+              </object> 
+              <void property="name"> 
+               <string>chatListPanel</string> 
+              </void> 
+              <void method="add"> 
+               <object class="com.jformdesigner.model.FormComponent"> 
+                <string>javax.swing.JList</string> 
+                <void method="setProperty"> 
+                 <string>selectionMode</string> 
+                 <int>0</int> 
+                </void> 
+                <void method="setProperty"> 
+                 <string>enabled</string> 
+                 <boolean>false</boolean> 
+                </void> 
+                <void property="name"> 
+                 <string>chatList</string> 
+                </void> 
+               </object> 
+              </void> 
+             </object> 
+             <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+              <class>java.lang.String</class> 
+              <void method="setProperty"> 
+               <string>value</string> 
+               <string>Center</string> 
+              </void> 
+             </object> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormContainer"> 
+              <string>javax.swing.JPanel</string> 
+              <object class="com.jformdesigner.model.FormLayoutManager"> 
+               <class>javax.swing.BoxLayout</class> 
+              </object> 
+              <void property="name"> 
+               <string>chatEditPanel</string> 
+              </void> 
+              <void method="add"> 
+               <object class="com.jformdesigner.model.FormComponent"> 
+                <string>javax.swing.JTextField</string> 
+                <void property="name"> 
+                 <string>chatEdit</string> 
+                </void> 
+                <void method="addEvent"> 
+                 <object class="com.jformdesigner.model.FormEvent"> 
+                  <string>java.awt.event.KeyListener</string> 
+                  <string>keyTyped</string> 
+                  <string>chatEditKeyTyped</string> 
+                  <boolean>true</boolean> 
+                 </object> 
+                </void> 
+               </object> 
+              </void> 
+              <void method="add"> 
+               <object class="com.jformdesigner.model.FormComponent"> 
+                <string>javax.swing.JButton</string> 
+                <void method="setProperty"> 
+                 <string>text</string> 
+                 <string>Odeslat</string> 
+                </void> 
+                <void property="name"> 
+                 <string>chatButton</string> 
+                </void> 
+                <void method="addEvent"> 
+                 <object class="com.jformdesigner.model.FormEvent"> 
+                  <string>java.awt.event.ActionListener</string> 
+                  <string>actionPerformed</string> 
+                  <string>chatButtonActionPerformed</string> 
+                  <boolean>true</boolean> 
+                 </object> 
+                </void> 
+               </object> 
+              </void> 
+             </object> 
+             <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+              <class>java.lang.String</class> 
+              <void method="setProperty"> 
+               <string>value</string> 
+               <string>North</string> 
+              </void> 
+             </object> 
+            </void> 
+           </object> 
+           <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+            <class>java.lang.String</class> 
+            <void method="setProperty"> 
+             <string>value</string> 
+             <string>Center</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+         <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+          <class>java.lang.String</class> 
+          <void method="setProperty"> 
+           <string>value</string> 
+           <string>Center</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormContainer"> 
+          <string>javax.swing.JPanel</string> 
+          <object class="com.jformdesigner.model.FormLayoutManager"> 
+           <class>java.awt.BorderLayout</class> 
+          </object> 
+          <void method="setProperty"> 
+           <string>border</string> 
+           <object class="javax.swing.border.TitledBorder"> 
+            <string>Klienti</string> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>maximumSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>150</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>preferredSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>150</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>minimumSize</string> 
+           <object class="java.awt.Dimension"> 
+            <int>300</int> 
+            <int>150</int> 
+           </object> 
+          </void> 
+          <void property="name"> 
+           <string>clientPanel</string> 
+          </void> 
+          <void method="add"> 
+           <object class="com.jformdesigner.model.FormContainer"> 
+            <string>javax.swing.JScrollPane</string> 
+            <object class="com.jformdesigner.model.FormLayoutManager"> 
+             <class>javax.swing.JScrollPane</class> 
+            </object> 
+            <void property="name"> 
+             <string>clinetScrollPane</string> 
+            </void> 
+            <void method="add"> 
+             <object class="com.jformdesigner.model.FormComponent"> 
+              <string>javax.swing.JTable</string> 
+              <void method="setProperty"> 
+               <string>selectionMode</string> 
+               <int>0</int> 
+              </void> 
+              <void property="name"> 
+               <string>clientTable</string> 
+              </void> 
+             </object> 
+            </void> 
+           </object> 
+           <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+            <class>java.lang.String</class> 
+            <void method="setProperty"> 
+             <string>value</string> 
+             <string>Center</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+         <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+          <class>java.lang.String</class> 
+          <void method="setProperty"> 
+           <string>value</string> 
+           <string>After</string> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>java.lang.String</class> 
+        <void method="setProperty"> 
+         <string>value</string> 
+         <string>Last</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>this</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>0</int> 
+        <int>10</int> 
+       </object> 
+      </void> 
+      <void method="setProperty"> 
+       <string>size</string> 
+       <object class="java.awt.Dimension"> 
+        <int>1080</int> 
+        <int>600</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormNonVisual"> 
+      <string>org.jdesktop.observablecollections.ObservableList</string> 
+      <void method="auxiliary"> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.typeParameters</string> 
+        <string>server.ServerClient</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.customCreateCode</string> 
+        <string>ServerUtils.getServerClients();</string> 
+       </void> 
+      </void> 
+      <void property="name"> 
+       <string>clientsListModel</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>185</int> 
+        <int>570</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormNonVisual"> 
+      <string>org.jdesktop.observablecollections.ObservableList</string> 
+      <void method="auxiliary"> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.typeParameters</string> 
+        <string>java.lang.String</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.customCreateCode</string> 
+        <string>Chat.getChatListModel(); </string> 
+       </void> 
+      </void> 
+      <void property="name"> 
+       <string>chatListModel</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>90</int> 
+        <int>570</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormNonVisual"> 
+      <string>org.jdesktop.observablecollections.ObservableList</string> 
+      <void method="auxiliary"> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.typeParameters</string> 
+        <string>oprava.Oprava</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.customCreateCode</string> 
+        <string>clientData.getOpravy().getList();</string> 
+       </void> 
+      </void> 
+      <void property="name"> 
+       <string>opravyListModel</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>395</int> 
+        <int>570</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormNonVisual"> 
+      <string>chat.ChatServerData</string> 
+      <void method="auxiliary"> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.customCreateCode</string> 
+        <string>clientData.getChatServerData();</string> 
+       </void> 
+      </void> 
+      <void property="name"> 
+       <string>chatServerData1</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>310</int> 
+        <int>620</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="addBindingGroup"> 
+     <object class="com.jformdesigner.model.FormBindingGroup"> 
+      <class>org.jdesktop.beansbinding.BindingGroup</class> 
+      <void method="setProperty"> 
+       <string>name</string> 
+       <string>bindingGroup</string> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>clientsListModel</string> 
+        <null/> 
+        <string>clientTable</string> 
+        <string>elements</string> 
+        <void method="setProperty"> 
+         <string>subBindings</string> 
+         <array class="com.jformdesigner.model.FormBinding" length="4"> 
+          <void index="0"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>clientType</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Klient</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.String</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="1"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>clientIp</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Ip adrresa</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.String</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="2"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>connected</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>sourcePathType</string> 
+             <class>boolean</class> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Connected</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="3"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>port</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>sourcePathType</string> 
+             <class>java.lang.Integer</class> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Port</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Integer</string> 
+            </void> 
+           </object> 
+          </void> 
+         </array> 
+        </void> 
+        <void method="setProperty"> 
+         <string>bindImmediately</string> 
+         <boolean>true</boolean> 
+        </void> 
+        <void method="setProperty"> 
+         <string>editable</string> 
+         <boolean>false</boolean> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>chatListModel</string> 
+        <null/> 
+        <string>chatList</string> 
+        <string>elements</string> 
+        <void method="setProperty"> 
+         <string>updateStrategy</string> 
+         <object id="AutoBinding$UpdateStrategy0" class="java.lang.Enum" method="valueOf"> 
+          <class>org.jdesktop.beansbinding.AutoBinding$UpdateStrategy</class> 
+          <string>READ</string> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>chatListModel</string> 
+        <string>${length}</string> 
+        <string>chatList</string> 
+        <string>selectedIndex</string> 
+        <void method="setProperty"> 
+         <string>updateStrategy</string> 
+         <object idref="AutoBinding$UpdateStrategy0"/> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>opravyListModel</string> 
+        <null/> 
+        <string>opravyTable</string> 
+        <string>elements</string> 
+        <void method="setProperty"> 
+         <string>subBindings</string> 
+         <array class="com.jformdesigner.model.FormBinding" length="9"> 
+          <void index="0"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>kod</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Kód</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.String</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="1"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>nazev</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Název</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.String</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="2"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>popis</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Popis</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.String</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>editable</string> 
+             <boolean>false</boolean> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="3"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>aktivni</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Aktivní</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="4"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>viditelnost</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>sourcePathType</string> 
+             <class>boolean</class> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Viditelnost</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="5"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>vyresena</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Vyřešeno</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="6"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>varovani</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Varování</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="7"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>vystraha</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Výstraha</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void index="8"> 
+           <object class="com.jformdesigner.model.FormBinding"> 
+            <null/> 
+            <string>showCross</string> 
+            <null/> 
+            <null/> 
+            <void method="setProperty"> 
+             <string>columnName</string> 
+             <string>Na mapě</string> 
+            </void> 
+            <void method="setProperty"> 
+             <string>columnClass</string> 
+             <string>java.lang.Boolean</string> 
+            </void> 
+           </object> 
+          </void> 
+         </array> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>chatServerData1</string> 
+        <string>chatButtonTitle</string> 
+        <string>chatEnableButton</string> 
+        <string>text</string> 
+        <void method="setProperty"> 
+         <string>updateStrategy</string> 
+         <object idref="AutoBinding$UpdateStrategy0"/> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>chatServerData1</string> 
+        <string>chatEnabled</string> 
+        <string>chatEdit</string> 
+        <string>enabled</string> 
+        <void method="setProperty"> 
+         <string>updateStrategy</string> 
+         <object idref="AutoBinding$UpdateStrategy0"/> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>chatServerData1</string> 
+        <string>chatEnabled</string> 
+        <string>chatButton</string> 
+        <string>enabled</string> 
+        <void method="setProperty"> 
+         <string>updateStrategy</string> 
+         <object idref="AutoBinding$UpdateStrategy0"/> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="addBinding"> 
+       <object class="com.jformdesigner.model.FormBinding"> 
+        <string>chatServerData1</string> 
+        <string>chatEnabled</string> 
+        <string>chatList</string> 
+        <string>enabled</string> 
+        <void method="setProperty"> 
+         <string>updateStrategy</string> 
+         <object idref="AutoBinding$UpdateStrategy0"/> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 
