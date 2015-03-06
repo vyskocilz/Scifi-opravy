@@ -19,6 +19,7 @@ public class ClientProperty {
     public static final String CLIENT_LOG = "client_log";
     public static final String CLIENT_CLOSE_PASSWORD = "client_close_password";
     public static final String CLIENT_ON_TOP = "client_on_top";
+    public static final String SERVER_PC_NAME = "server_pc_name";
 
     private ClientProperty() {
         initPropertyFile();
